@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{468CB295-244A-4A77-85B9-B849A13B84B4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentionCompiler</RootNamespace>
+    <AssemblyName>DocumentionCompiler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NVelocity">
+      <HintPath>packages\NVelocity.1.0.3\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocumentTemplates\examples\example1\script.js" />
+    <Content Include="DocumentTemplates\examples\example1\index.html" />
+    <Content Include="DocumentTemplates\index.html" />
+    <Content Include="_compiledResult\index.html" />
+    <Content Include="_compiledResult\public\bootstrap\bootstrap.js" />
+    <Content Include="_compiledResult\public\bootstrap\bootstrap.min.css" />
+    <Content Include="_compiledResult\public\prettify\lang-apollo.js" />
+    <Content Include="_compiledResult\public\prettify\lang-basic.js" />
+    <Content Include="_compiledResult\public\prettify\lang-clj.js" />
+    <Content Include="_compiledResult\public\prettify\lang-css.js" />
+    <Content Include="_compiledResult\public\prettify\lang-dart.js" />
+    <Content Include="_compiledResult\public\prettify\lang-erlang.js" />
+    <Content Include="_compiledResult\public\prettify\lang-go.js" />
+    <Content Include="_compiledResult\public\prettify\lang-hs.js" />
+    <Content Include="_compiledResult\public\prettify\lang-lisp.js" />
+    <Content Include="_compiledResult\public\prettify\lang-llvm.js" />
+    <Content Include="_compiledResult\public\prettify\lang-lua.js" />
+    <Content Include="_compiledResult\public\prettify\lang-matlab.js" />
+    <Content Include="_compiledResult\public\prettify\lang-ml.js" />
+    <Content Include="_compiledResult\public\prettify\lang-mumps.js" />
+    <Content Include="_compiledResult\public\prettify\lang-n.js" />
+    <Content Include="_compiledResult\public\prettify\lang-pascal.js" />
+    <Content Include="_compiledResult\public\prettify\lang-proto.js" />
+    <Content Include="_compiledResult\public\prettify\lang-r.js" />
+    <Content Include="_compiledResult\public\prettify\lang-rd.js" />
+    <Content Include="_compiledResult\public\prettify\lang-scala.js" />
+    <Content Include="_compiledResult\public\prettify\lang-sql.js" />
+    <Content Include="_compiledResult\public\prettify\lang-tcl.js" />
+    <Content Include="_compiledResult\public\prettify\lang-tex.js" />
+    <Content Include="_compiledResult\public\prettify\lang-vb.js" />
+    <Content Include="_compiledResult\public\prettify\lang-vhdl.js" />
+    <Content Include="_compiledResult\public\prettify\lang-wiki.js" />
+    <Content Include="_compiledResult\public\prettify\lang-xq.js" />
+    <Content Include="_compiledResult\public\prettify\lang-yaml.js" />
+    <Content Include="_compiledResult\public\prettify\prettify.css" />
+    <Content Include="_compiledResult\public\prettify\prettify.js" />
+    <Content Include="_compiledResult\public\prettify\run_prettify.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

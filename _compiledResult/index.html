@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>My documentation</title>
+		<link href="public/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+		<link href="public/prettify/prettify.css" rel="stylesheet"/>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="public/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <script src="public/prettify/prettify.js" type="text/javascript"></script>
+  </head>
+  
+  <body onload="prettyPrint()">
+    
+    <ul id="myTabs" class="nav nav-tabs" >
+			<li class="active"><a data-target="#example1_index_html" data-toggle="tab">index.html</a></li>
+			<li><a data-target="#example1_script_js" data-toggle="tab">script.js</a></li>
+		</ul>
+
+    <div class="tab-content">
+      
+      <div class="tab-pane active" id="example1_index_html">
+        <pre class="prettyprint linenums">&lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a data-target=&quot;#example1_index_html&quot; data-toggle=&quot;tab&quot;&gt;index.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a data-target=&quot;#example1_script_js&quot; data-toggle=&quot;tab&quot;&gt;index.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane active&quot; id=&quot;example1_index_html&quot;&gt;
+    $model.Helpers.RawHtml(&quot;index.html&quot;)
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;example1_script_js&quot;&gt;
+    $model.Helpers.RawScript(&quot;script.js&quot;)
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+      </div>
+
+      <div class="tab-pane" id="example1_script_js">
+        <pre class="prettyprint linenums">
+function displayDate()
+{
+    document.getElementById(&quot;demo&quot;).innerHTML=Date();
+}
+
+</pre>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
